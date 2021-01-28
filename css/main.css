@@ -1,0 +1,162 @@
+body { 
+    height: 100%;
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+}
+header {
+    background: #E7EBED;
+    height: 104px;
+    position: relative;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 500;
+}
+footer {
+    background-color:#004136;
+    color: #E7EBED;
+    font-style: normal;
+    padding: 35px 0;
+    height: 370px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    outline: none;
+}
+form {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.mobile-menu input[type=checkbox]:checked+label::before {
+    content: '';
+}
+#menu__toggle {
+    opacity: 0;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu {
+    visibility: visible;
+    left: 0;
+    z-index: 5;
+}
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 10;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2.2px;
+    background-color: #fff;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+.mobile-menu .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 360px;
+    height: 100%;
+    margin: 0;
+    padding: 60px 0;
+    list-style: none;
+    background-color: #21A355;
+    transition-duration: .3s;
+}
+
+.mobile-menu .menu li {
+    display: block;
+    padding: 14px 24px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+.header .menu li:not(:nth-of-type(5n+1)) {
+    padding-left: 37px;
+}
+.header-mob {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .header-mob {
+        display: flex;
+    }
+    .header {
+        display: none;
+    }
+
+}
+.header {
+    color: #004136;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+.header a {
+    color: #004136;
+    text-decoration: none;
+}
+.header .menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.header .menu {
+    font-size: 12px;
+    line-height: 14px;
+}
+.header .phone {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+}
+.header .logo-center {
+    width: 70px;
+    height: 74px;
+    padding: 0 72px;
+}
