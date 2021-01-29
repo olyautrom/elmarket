@@ -391,4 +391,7 @@ form {
     .wrapper {
         padding: 0 12px;
     }
+    .header-mob .menu__btn {
+        left: 14px;
+    }
 }
