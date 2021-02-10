@@ -489,18 +489,20 @@ header.fixed{
     left: 0;
     right: auto;
 }
-h1 {
+h1, h2 {
     font-family: 'IBM Plex Serif', sans-serif;
     font-size: 36px;
     line-height: 43px;
-    text-align: center;
     color:#004136;
+}
+h1 {
+    text-align: center;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-h2 {
+h3 {
     font-family: 'IBM Plex Serif', sans-serif;
     font-size: 24px;
     line-height: 28px;
@@ -525,7 +527,7 @@ h1:after {
     background-size: contain;
     margin-left: 30px;
 }
-h2:after {
+h3:after {
     content: '';
     background: url(/image/title-down.svg) no-repeat center center;
     height: 22px;
@@ -546,6 +548,8 @@ h2:after {
 }
 .main-promo {
     text-align: center;
+}
+section {
     padding: 66px 0 88px;
     position: relative;
 }
@@ -553,9 +557,10 @@ h2:after {
     background-color: #E7EBED;
 }
 .main-production {
-    padding: 66px 0 112px;
+    padding-bottom: 112px;
 }
-.main-production .production-items {
+.main-production .production-items,
+.main-news .news-items {
     display: flex;
     justify-content: space-between;
     padding: 60px 0 0;
@@ -576,12 +581,26 @@ h2:after {
     background: #21A355;
     transition: 0.2s;
 }
-.production__item:hover h2 {
+.production__item:hover h3 {
     color: #21A355;
     transition: 0.2s;
 }
-.production__item:hover h2:after {
+.production__item:hover h3:after {
     background: url(/image/title-down-hover.svg) no-repeat center center;
     background-size: contain;
     transition: 0.2s;
+}
+.production__item h3 {
+    margin-top: 10px;
+}
+.news__item {
+    border-radius: 9px;
+    max-width: 320px;
+}
+.main-news .news__item {
+    background: #E7EBED;
+}
+.news__item img {
+    width: 100%;
+    border-radius: 9px 9px 0 0;
 }
