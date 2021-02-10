@@ -593,14 +593,33 @@ section {
 .production__item h3 {
     margin-top: 10px;
 }
-.news__item {
+.news-items .news__item {
     border-radius: 9px;
-    max-width: 320px;
+    max-width: 360px;
+    color: #004136;
 }
-.main-news .news__item {
+.main-news .news-items .news__item {
     background: #E7EBED;
 }
-.news__item img {
+.news-items .news__item img {
     width: 100%;
     border-radius: 9px 9px 0 0;
+}
+.news-items .news__item .news__item-inner {
+    padding: 24px;
+}
+.news-items .news__item .news__data {
+    color: #848484;
+    font-size: 14px;
+    line-height: 17px;
+}
+.news-items .news__item .news__title {
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 30px 0;
+}
+.news-items .news__item .news__intro {
+    font-size: 18px;
+    line-height: 21px;
 }
