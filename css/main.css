@@ -11,7 +11,7 @@ body {
     width: 100%;
     font-family: 'IBM Plex Sans', sans-serif;
     margin: 0;
-    background: #ffffff;
+    background: #E7EBED;
 }
 header {
     background: #E7EBED;
@@ -20,6 +20,9 @@ header {
     font-family: 'IBM Plex Mono', sans-serif;
     font-weight: 500;
     z-index: 10;
+}
+main {
+    background: #ffffff;
 }
 footer {
     background-color:#004136;
@@ -124,7 +127,10 @@ form {
     width: 41px;
     height: auto;
 }
-.header .menu li:not(:nth-of-type(5n+1)) {
+.default .header .menu li:not(:nth-of-type(5n+1)) {
+    padding-left: 37px;
+}
+.fixed .header .menu li {
     padding-left: 37px;
 }
 .header {
@@ -502,6 +508,9 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+h2 {
+    padding: 46px 0 50px;
+}
 h3 {
     font-family: 'IBM Plex Serif', sans-serif;
     font-size: 24px;
@@ -550,7 +559,7 @@ h3:after {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 40px;
+    bottom: -40px;
 }
 .promo__text {
     font-weight: 300;
@@ -593,6 +602,7 @@ section {
     border-radius: 100px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 .production__item:hover .green-hover {
     background: #21A355;
@@ -608,22 +618,29 @@ section {
     transition: 0.2s;
 }
 .production__item h3 {
-    margin-top: 10px;
+    margin: 10px auto 0;
+    max-width: 240px;
 }
 .news-items .news__item {
     border-radius: 9px;
     max-width: 360px;
     color: #004136;
 }
+.news-items .news__item a {
+    color: #004136;
+}
+.news-items .news__item:hover a {
+    color: #fff;
+    transition: 0.3s;
+}
 .news-items .news__item:not(:nth-child(3n)) {
     margin-right: 20px;
 }
-.main-news .news-items .news__item {
+.news-items .news__item {
     background: #E7EBED;
 }
 .news-items .news__item:hover {
     background: #21A355;
-    color: #ffffff;
     transition: 0.3s;
 }
 .news-items .news__item img {
@@ -691,6 +708,9 @@ section {
 .main-contacts .contacts__info h4:nth-of-type(2) {
     margin: 40px 0 0;
 }
+.contacts-page {
+    padding: 0 0 80px;
+}
 ul.breadcrumb {
     padding: 25px 0;
     list-style: none;
@@ -714,14 +734,15 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
     color: #004136;
 }
-.our-partners p {
+.our-partners {
+    font-family: 'IBM Plex Serif', sans-serif;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
     padding: 0 0 40px;
+    color: #004136;
 }
-.our-partners {
-    font-family: 'IBM Plex Serif', sans-serif;
+.our-partners .parters__title {
     margin: 40px 0 80px;
 }
 .our-partners .partners-imems {
@@ -759,4 +780,82 @@ ul.breadcrumb li a:hover {
 }
 .ingredients-items  .ingredients__item:not(:nth-child(5n)) {
     margin-right: 30px;
+}
+.mixes-page .production-items,
+.ready-meal-page .production-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 110px;
+    flex-wrap: wrap;
+}
+.mixes-page .production-items  .production__item {
+    flex-basis: 50%;
+    padding: 40px 0 0;
+}
+.ready-meal-page .production-items .production__item {
+    flex-basis: 33%;
+    padding: 40px 0 0;
+}
+.production-menu {
+    display: flex;
+    margin: 70px 0 24px;
+    flex-wrap: wrap;
+}
+.production-menu h5:not(:last-of-type) {
+    margin-right: 35px;
+}
+.product-section h2 span {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 18px;
+}
+.production-menu a {
+    color: #004136;
+}
+.production-menu a:hover {
+    color: #21A355;
+}
+.product-grid .grid__item {
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #004136;  
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #00000010;
+    background: #fff;
+}
+.product-grid .grid__item p {
+    text-align: center;
+    padding: 0 20px;
+}
+.product-grid .grid__item img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 100%;
+    display: block;
+    margin: 20px auto 28px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 50px;
+}
+.product-grid .grid__item:hover {
+    background: #21A355;
+    color: #fff;
+}
+.product-section {
+    padding: 0 0 50px;
+}
+.product-section.last {
+    padding: 0 0 100px;
+}
+
+.fixed + main {
+    margin-top: 104px;
 }
