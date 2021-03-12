@@ -1298,3 +1298,14 @@ ul.breadcrumb li a:hover {
         padding: 0 0 40px;
     }
 }
+.news-page .news-items{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-column-gap:19.4px;
+    grid-row-gap:44px;
+    padding:79.4px 0 89.6px;
+}
