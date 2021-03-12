@@ -558,7 +558,7 @@ h1:before {
     width: 26px;
     background-size: contain;
     display: inline-block;
-    margin-right: 30px;
+    margin: 6px 30px 0 0;
 }
 h1:after {
     content: '';
@@ -566,7 +566,7 @@ h1:after {
     height: 30px;
     width: 26px;
     background-size: contain;
-    margin-left: 30px;
+    margin: 6px 0 0 30px;
 }
 h3:after {
     content: '';
@@ -1297,4 +1297,9 @@ ul.breadcrumb li a:hover {
         line-height: 28px;
         padding: 0 0 40px;
     }
+}
+
+.production-menu.test {
+    margin: 0;
+    padding: 40px 0 0;
 }
