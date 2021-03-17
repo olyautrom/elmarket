@@ -40,7 +40,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+var menuToggle = document.getElementById('menu__toggle');
+
 window.addEventListener('popstate', function() {
-    var menuToggle = document.querySelector('#menu__toggle');
     if (menuToggle) menuToggle.checked = false;
 });
+
+menuToggle.addEventListener("change", function(e) {
+    if (this.checked) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "scroll";
+    }
+});
+
+
