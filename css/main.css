@@ -1036,16 +1036,16 @@ ul.breadcrumb li a:hover {
     
     display: inline-block;
     border-radius: 20px;
-    width: 575px;
+    width: 45%;
     margin-right: 20px;
 }
 .current_news-page .news__item .news__item-inner {
     
     display: inline-block;
     vertical-align: top;
-    width: 471px;
+    width: 45%;
     /*padding: 24px;*/
-    padding:25px 0 0 100px;
+    padding:25px 0 0 35px;
 
 }
 .current_news-page .news__item .news__data {
@@ -1074,17 +1074,17 @@ ul.breadcrumb li a:hover {
     justify-content: space-between;
     margin-top: 64px;
     align-content: space-around;
+    color: #004136;
 }
 .news-entire-text_block-cover{
-    width: 530px;
+    width: 48%;
     padding-top:30px;
 }
 .news-entire-text_block{
-
     margin-bottom: 60px;
 }
 .news-entire-text img{
-    width: 530px;
+    width: 48%;
     margin-bottom: 60px;
 }
 .septum{
@@ -1099,17 +1099,20 @@ ul.breadcrumb li a:hover {
 .news-page .news-items .news__item:not(:nth-child(3n)) {
     margin-right: 0px; 
 }
-@media screen and (max-width: 1202px) {
+@media screen and (max-width: 1020px) {
+
     .current_news-page .news__item img{
         display: block;
         margin:50px auto;
         border-radius: 20px 20px 0 0;
+        width: 80%;
     }
     .current_news-page .news__item .news__item-inner{
         display: block;
         text-align: center;
         margin:auto;
         padding: 0;
+        width: 80%;
     }
     .septum{
         display: none;
@@ -1130,14 +1133,18 @@ ul.breadcrumb li a:hover {
     }
     .current-news-text_block-2{
         order:2;
-    }
-}
-@media screen and (max-width: 1020px) { 
+    } 
     .news-page .news-items{
         grid-template-columns: repeat(2, 1fr);
     }
     .news-entire-text{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .news-entire-text_block-cover{
+        width: 80%;
+    }
+    .news-entire-text img{
+        width: 80%;
     }
     .news-page .news-items .news__item{
         max-width: 100%;
@@ -1329,6 +1336,9 @@ ul.breadcrumb li a:hover {
     }
     .news-page .news-items{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .news-entire-text{
+        font-size: 22px;
     }
 }
 @media screen and (max-width: 500px) {
