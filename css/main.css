@@ -1465,6 +1465,23 @@ ul.breadcrumb li a:hover {
         line-height: 28px;
         padding: 0 0 40px;
     }
+    .current_news-page .news__item .news__title {
+        font-size: 22px;
+    }
+    .current_news-page .news__item img{
+        width: 100%;
+    }
+    .current_news-page .news__item .news__item-inner {
+        width: 100%;
+    }
+    .current_news-page .news__item .news__intro {
+        font-size: 25px;
+        width: 100%;
+    }
+    }
+    .news-entire-text_block{
+        font-size: 18px;  
+    }
 }
 
 .production-menu.test {
