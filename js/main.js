@@ -25,14 +25,14 @@ $(document).ready(function(){
         speed: 300,
         slidesToScroll: 1,
         slidesToShow: 3
-      });
+    });
            
 });
 
 document.addEventListener('DOMContentLoaded', function() {
     var expandImg = document.getElementById("expandedImg");
     var imgs = document.querySelectorAll('.enterImg');
-    //expandImg.src = imgs[0].src;
+    //expandImg.src = imgs[1].src;
     imgs.forEach(function(item) {
         item.addEventListener('click', function(elem) {
             expandImg.src = elem.target.src;
