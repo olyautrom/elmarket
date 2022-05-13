@@ -464,7 +464,7 @@ header.fixed{
     }
 }
 .main-banner {
-    background: url(/image/banner-back.jpg);
+    background: url(../image/banner-back.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -570,7 +570,7 @@ h5 {
 }
 h1:before {
     content: '';
-    background: url(/image/title-left.svg) no-repeat center center;
+    background: url(../image/title-left.svg) no-repeat center center;
     height: 30px;
     width: 26px;
     background-size: contain;
@@ -579,7 +579,7 @@ h1:before {
 }
 h1:after {
     content: '';
-    background: url(/image/title-right.svg) no-repeat center center;
+    background: url(../image/title-right.svg) no-repeat center center;
     height: 30px;
     width: 26px;
     background-size: contain;
@@ -587,7 +587,7 @@ h1:after {
 }
 h3:after {
     content: '';
-    background: url(/image/title-down.svg) no-repeat center center;
+    background: url(../image/title-down.svg) no-repeat center center;
     height: 22px;
     width: 34px;
     background-size: contain;
@@ -653,7 +653,7 @@ section {
     transition: 0.2s;
 }
 .production__item:hover h3:after {
-    background: url(/image/title-down-hover.svg) no-repeat center center;
+    background: url(../image/title-down-hover.svg) no-repeat center center;
     background-size: contain;
     transition: 0.2s;
 }
@@ -945,7 +945,7 @@ ul.breadcrumb li a:hover {
 }
 .about-company .about-company__item:before {
     content: '';
-    background: url(/image/title-left.svg) no-repeat center center;
+    background: url(../image/title-left.svg) no-repeat center center;
     height: 21px;
     width: 18px;
     background-size: contain;
@@ -1351,7 +1351,7 @@ ul.breadcrumb li a:hover {
         font-size: 22px;
     }
     .main-banner {
-        background: url(/assets/image/banner-back-mob.jpg);
+        background: url(../image/banner-back-mob.jpg);
         background-size: cover;
         background-position: center;
         height: 600px;
